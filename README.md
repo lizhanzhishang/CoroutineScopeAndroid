@@ -9,6 +9,24 @@ retrofit2-kotlin-coroutines-adapter:0.9.2
 ~~~
 
 写的一个DSL网络请求框架，简单方便
+~~~
+
+     retrofitApi<String> {
+            api =Api.instance.service.getHtmlContext1("https://github.com/square/retrofit")
+            onSuccess { 
+                 html, _, _ ->
+                    txtinof.text = html
+            }
+            onFail {
+                 _, _, _ ->
+            }
+            onComplete {
+                
+            }
+        }
+
+~~~
+
 
 例子可以从MainActivity做简单入手看起。
 代码写有编写时候的测试代码还存在的，可帮助思考为什么这样写
