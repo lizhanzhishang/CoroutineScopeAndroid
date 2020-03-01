@@ -8,7 +8,7 @@ kotlinx-coroutines-core:1.3.3
 retrofit2-kotlin-coroutines-adapter:0.9.2
 ~~~
 
-写的一个DSL网络请求框架，简单方便
+写的一个DSL网络请求框架，简单方便,用法如下，和Js非常像吧，写起来也比较方便
 ~~~
 
      retrofitApi<String> {
